@@ -1,0 +1,49 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+.faq ul {
+  list-style: none;
+  padding: 0;
+}
+
+.faq li {
+  background: white;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.question {
+  font-weight: bold;
+  color: #333;
+}
+
+.answer {
+  margin-top: 5px;
+  color: #555;
+}
+
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}

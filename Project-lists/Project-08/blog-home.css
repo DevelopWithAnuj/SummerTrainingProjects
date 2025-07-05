@@ -1,0 +1,57 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+.post {
+  background: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.post h2 {
+  color: #333;
+}
+
+.post .meta {
+  font-size: 0.9em;
+  color: #666;
+}
+
+.post .summary {
+  margin: 10px 0;
+}
+
+.post a {
+  color: #007BFF;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.post a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
