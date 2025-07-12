@@ -3,227 +3,114 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>E-commerce Product Listing</title>
+    <title>Modern E-commerce Store</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="header">
-      <h1 class="logo">E-commerce Store</h1>
-      <nav class="nav">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Products</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-      <div class="search-bar">
-        <input type="text" placeholder="Search products..." />
-        <button>Search</button>
-      </div>
-      <div class="cart">
-        <a href="#">Add Cart (0)</a>
+    <header class="main-header">
+      <div class="container">
+        <h1>The Gadget Store</h1>
       </div>
     </header>
 
-    <main class="product-list">
-      <section class="product-list-header">
-        <h1>Product Listing</h1>
-        <p>Explore our range of products below.</p>
-      </section>
-
-      <section class="first-section">
-        <!-- Filter Sidebar -->
-        <div class="filter">
-          <h2>Filters</h2>
-          <form class="filter-form">
-            <div class="filter-category">
-              <label for="category">Category:</label>
-              <select id="category" name="category">
-                <option value="all">All</option>
-                <option value="electronics">Electronics</option>
-                <option value="clothing">Clothing</option>
-                <option value="home">Home</option>
-              </select>
-            </div>
-            <div class="filter-rating">
-              <label for="rating">Rating:</label>
-              <select id="rating" name="rating">
-                <option value="all">All Ratings</option>
-                <option value="4-stars">4 Stars & Up</option>
-                <option value="3-stars">3 Stars & Up</option>
-              </select>
-            </div>
-
-            <div class="filter-price-range">
-              <label for="price-range">Price Range:</label>
-              <input
-                type="range"
-                id="price-range"
-                name="price-range"
-                min="0"
-                max="100"
-              />
-              <span class="price-range-value">$0 - $100</span>
-            </div>
-
-            <button type="submit" class="apply-filters">Apply Filters</button>
-          </form>
+    <main class="container">
+      <div class="product-grid">
+        <!-- Product 1 -->
+        <div class="product-card">
+          <div class="product-image-container">
+            <img src="Assets/img1.jfif" alt="A sleek, modern smartphone" />
+          </div>
+          <div class="product-info">
+            <h2>AstroPhone X</h2>
+            <p>
+              Experience the future with the new AstroPhone X, featuring a
+              stunning edge-to-edge display and a revolutionary camera system.
+            </p>
+            <div class="product-price">$999.00</div>
+            <button class="add-to-cart-btn">Add to Cart</button>
+            <button class="view-detail-btn">View Detail</button>
+          </div>
         </div>
 
-        <!-- Sort and Search -->
-        <div class="sort-options">
-          <h2>Sort By</h2>
-          <form class="sort-form">
-            <label for="sort-by">Sort by:</label>
-            <select id="sort-by" name="sort-by">
-              <option value="price-asc">Price: Low to High</option>
-              <option value="price-desc">Price: High to Low</option>
-              <option value="rating">Rating</option>
-              <option value="newest">Newest</option>
-            </select>
-            <label for="sort-order">Order:</label>
-            <select id="sort-order" name="sort-order">
-              <option value="asc">Ascending</option>
-              <option value="desc">Descending</option>
-            </select>
-            <button type="submit" class="apply-sort">Apply Sort</button>
-          </form>
-        </div>
-
-        <div class="search-bar">
-          <h2>Search</h2>
-          <form class="search-form">
-            <input
-              type="text"
-              id="search"
-              name="search"
-              placeholder="Search for products..."
+        <!-- Product 2 -->
+        <div class="product-card">
+          <div class="product-image-container">
+            <img
+              src="Assets/img2.jfif"
+              alt="Wireless noise-cancelling headphones"
             />
-            <button type="submit" class="search-button">Search</button>
-          </form>
+          </div>
+          <div class="product-info">
+            <h2>SoundWave Buds Pro</h2>
+            <p>
+              Immerse yourself in pure audio with active noise cancellation and
+              a comfortable, all-day fit. Perfect for music lovers.
+            </p>
+            <div class="product-price">$249.00</div>
+            <button class="add-to-cart-btn">Add to Cart</button>
+            <button class="view-detail-btn">View Detail</button>
+          </div>
         </div>
-      </section>
 
-      <section class="second-sec">
-        <!-- Product Cards -->
-        <article class="product">
-          <img src="Assets/img1.jfif" alt="Product Image" />
-            <div class="spacer"></div>
-          <h2 class="product-title">Product Title</h2>
-          <p class="product-description">
-            This is a brief description of the product. It highlights the key
-            features and benefits.
-          </p>
-          <span class="product-price">$19.99</span>
-          <button class="add-to-cart">Add to Cart</button>
-          <button class="view-details">View Details</button>
-          <div class="product-rating">
-            <span class="rating-stars">★★★★★</span>
-            <span class="rating-count">(200 reviews)</span>
+        <!-- Product 3 (Sold Out) -->
+        <div class="product-card product-sold-out">
+          <div class="product-image-container">
+            <img src="Assets/img3.jfif" alt="A futuristic smartwatch" />
           </div>
-        </article>
+          <div class="product-info">
+            <h2>ChronoWatch 2</h2>
+            <p>
+              Stay connected and track your fitness with this stylish
+              smartwatch. Features a vibrant AMOLED screen and long-lasting
+              battery.
+            </p>
+            <div class="product-price">$349.00</div>
+            <button class="add-to-cart-btn" disabled>Sold Out</button>
+            <button class="view-detail-btn">View Detail</button>
+          </div>
+        </div>
 
-        <article class="product">
-          <img src="Assets/img2.jfif" alt="Product Image" />
-            <div class="spacer"></div>
-          <h2 class="product-title">Product Title</h2>
-          <p class="product-description">
-            This is a brief description of the product. It highlights the key
-            features and benefits.
-          </p>
-          <span class="product-price">$29.99</span>
-          <button class="add-to-cart">Add to Cart</button>
-          <button class="view-details">View Details</button>
-          <div class="product-rating">
-            <span class="rating-stars">★★★★☆</span>
-            <span class="rating-count">(120 reviews)</span>
+        <!-- Product 4 -->
+        <div class="product-card">
+          <div class="product-image-container">
+            <img
+              src="Assets/img4.jfif"
+              alt="A powerful and lightweight laptop"
+            />
           </div>
-        </article>
+          <div class="product-info">
+            <h2>NovaBook Air</h2>
+            <p>
+              Unleash your creativity with the ultra-light NovaBook Air.
+              Powerful performance in a slim, portable design.
+            </p>
+            <div class="product-price">$1299.00</div>
+            <button class="add-to-cart-btn">Add to Cart</button>
+            <button class="view-detail-btn">View Detail</button>
+          </div>
+        </div>
 
-        <article class="product">
-          <img src="Assets/img3.jfif" alt="Product Image" />
-            <div class="spacer"></div>
-          <h2 class="product-title">Product Title</h2>
-          <p class="product-description">
-            This is a brief description of the product. It highlights the key
-            features and benefits.
-          </p>
-          <span class="product-price">$39.99</span>
-          <button class="add-to-cart">Add to Cart</button>
-          <button class="view-details">View Details</button>
-          <div class="product-rating">
-            <span class="rating-stars">★★★☆☆</span>
-            <span class="rating-count">(80 reviews)</span>
+        <!-- Product 5 -->
+        <div class="product-card">
+          <div class="product-image-container">
+            <img src="Assets/img5.jfif" alt="A smart home hub device" />
           </div>
-        </article>
-
-        <article class="product">
-          <img src="Assets/img4.jfif" alt="Product Image" />
-            <div class="spacer"></div>
-          <h2 class="product-title">Product Title</h2>
-          <p class="product-description">
-            This is a brief description of the product. It highlights the key
-            features and benefits.
-          </p>
-          <span class="product-price">$59.99</span>
-          <button class="add-to-cart">Add to Cart</button>
-          <button class="view-details">View Details</button>
-          <div class="product-rating">
-            <span class="rating-stars">★☆☆☆☆</span>
-            <span class="rating-count">(300 reviews)</span>
+          <div class="product-info">
+            <h2>ConnectHub Mini</h2>
+            <p>
+              Control your smart home with your voice. The ConnectHub Mini is a
+              compact speaker that's big on help.
+            </p>
+            <div class="product-price">$49.00</div>
+            <button class="add-to-cart-btn">Add to Cart</button>
+            <button class="view-detail-btn">View Detail</button>
           </div>
-        </article>
-        
-        <article class="product">
-          <img src="Assets/img5.jfif" alt="Product Image" />
-            <div class="spacer"></div>
-          <h2 class="product-title">Product Title</h2>
-          <p class="product-description">
-            This is a brief description of the product. It highlights the key
-            features and benefits.
-          </p>
-          <span class="product-price">$49.99</span>
-          <button class="add-to-cart">Add to Cart</button>
-          <button class="view-details">View Details</button>
-          <div class="product-rating">
-            <span class="rating-stars">★★★★★</span>
-            <span class="rating-count">(900 reviews)</span>
-          </div>
-        </article>
-
-        <article class="product">
-          <img src="Assets/img6.jfif" alt="Product Image" />
-            <div class="spacer"></div>
-          <h2 class="product-title">Product Title</h2>
-          <p class="product-description">
-            This is a brief description of the product. It highlights the key
-            features and benefits.
-          </p>
-          <span class="product-price">$89.99</span>
-          <button class="add-to-cart">Add to Cart</button>
-          <button class="view-details">View Details</button>
-          <div class="product-rating">
-            <span class="rating-stars">★★★★☆</span>
-            <span class="rating-count">(870 reviews)</span>
-          </div>
-        </article>
-      </section>
-
-      <section class="pagination">
-        <button class="prev-page">Previous</button>
-        <span class="page-number">1</span>
-        <button class="next-page">Next</button>
-      </section>
+        </div>
+      </div>
     </main>
 
-    <footer class="footer">
-      <p>&copy; 2025 E-commerce Store. All rights reserved.</p>
-      <nav class="footer-nav">
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms of Service</a>
-        <a href="#">Contact Us</a>
-      </nav>
+    <footer class="main-footer">
+      <p>&copy; 2025 The Gadget Store. All rights reserved.</p>
     </footer>
   </body>
 </html>

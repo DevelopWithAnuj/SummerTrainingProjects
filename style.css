@@ -1,0 +1,79 @@
+/* style.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+  color: #e0e0e0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+}
+
+header {
+  margin-bottom: 40px;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.2), 0 0 20px rgba(255, 255, 255, 0.2);
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #a9a9b3;
+}
+
+.project-list {
+  width: 100%;
+  max-width: 800px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.project-item {
+  background: rgba(255, 255, 255, 0.1);
+  color: #f0f0f0;
+  padding: 18px 25px;
+  border-radius: 12px;
+  text-decoration: none;
+  display: block;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  font-size: 1.1rem;
+  font-weight: 500;
+  border-left: 5px solid transparent;
+}
+
+.project-item:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateX(10px) scale(1.02);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  border-left: 5px solid #3a86ff;
+}
+
+.project-item:active {
+  transform: scale(0.99);
+}
